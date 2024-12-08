@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	font-family: Montserrat, sans-serif;
+	color-scheme: light dark;
+
+	/* light colors */
+	--light-bg: #fbfefb;
+	--light-fg: #252422;
+	--light-accent: #0466c8;
+
+	/* dark colors */
+	--dark-bg: #252422;
+	--dark-fg: #fffcf2;
+	--dark-accent: #ccc5b9;
+}
+
+body {
+	color: light-dark(var(--light-fg), var(--dark-fg));
+	background-color: light-dark(var(--light-bg), var(--dark-bg));
+}
